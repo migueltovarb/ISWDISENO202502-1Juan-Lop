@@ -348,11 +348,11 @@ gestion-tareas-api/
 │   ├── main/
 │   │   ├── java/com/gestion/tareas/
 │   │   │   ├── model/
-│   │   │   │   ├── Usuario.java
+│   │   │   │   ├── Empleado.java
 │   │   │   │   ├── Proyecto.java
 │   │   │   │   └── Tarea.java
 │   │   │   ├── repository/
-│   │   │   │   ├── UsuarioRepository.java
+│   │   │   │   ├── EmpleadoRepository.java
 │   │   │   │   ├── ProyectoRepository.java
 │   │   │   │   └── TareaRepository.java
 │   │   │   ├── service/
@@ -447,32 +447,3 @@ Todas las respuestas de error siguen el formato:
 - ✅ **CORS habilitado**
 - ✅ **Lombok para reducir boilerplate**
 
----
-
-## 📝 Notas Adicionales
-
-### MongoDB Atlas - Colecciones Creadas:
-- `usuarios` - Empleados del sistema
-- `proyectos` - Proyectos activos
-- `tareas` - Tareas asignadas
-
-### Índices Automáticos:
-- `usuarios.email` - Único
-- `proyectos.estado` - Para búsquedas
-- `tareas.proyectoId + estado` - Compuesto
-
----
-
-## 🤝 Soporte
-
-Para problemas o preguntas, contacta al equipo de desarrollo.
-
----
-
-## 📄 Licencia
-
-MIT License
-
----
-
-¡API lista para usar! 🚀
